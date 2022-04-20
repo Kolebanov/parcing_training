@@ -9,4 +9,8 @@ headers = {
 }
 req = requests.get(url, headers=headers)
 src = req.text
-print(src)
+# print(src)
+
+
+with open('index.html', 'w') as file:
+    file.write(src)
